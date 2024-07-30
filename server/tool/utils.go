@@ -95,10 +95,7 @@ func getSeverStatus() {
 			m["io_send"] = (io2[0].BytesSent - io1[0].BytesSent) * 2
 			m["io_recv"] = (io2[0].BytesRecv - io1[0].BytesRecv) * 2
 		}
-		loc, err := time.LoadLocation("Asia/Shanghai")
-		if err != nil {
-			return
-		}
+		loc := time.FixedZone("CST", 8*3600) 
 		t := time.Now().In(loc)
 		m["time"] = strconv.Itoa(t.Hour()) + ":" + strconv.Itoa(t.Minute()) + ":" + strconv.Itoa(t.Second())
 
