@@ -96,7 +96,6 @@ func getSeverStatus() {
 			m["io_recv"] = (io2[0].BytesRecv - io1[0].BytesRecv) * 2
 		}
 		loc, err := time.LoadLocation("Asia/Shanghai")
-		loc, err := time.LoadLocation("Asia/Shanghai")
 		if err != nil {
 			return
 		}
