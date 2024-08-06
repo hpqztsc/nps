@@ -97,7 +97,8 @@ func getSeverStatus() {
 		}
 		loc := time.FixedZone("CST", 8*3600) 
 		t := time.Now().In(loc)
-		m["time"] = strconv.Itoa(t.Hour()) + ":" + strconv.Itoa(t.Minute()) + ":" + strconv.Itoa(t.Second())
+		// m["time"] = strconv.Itoa(t.Hour()) + ":" + strconv.Itoa(t.Minute()) + ":" + strconv.Itoa(t.Second())
+		m["time"] = t.Format("01.02-15:00")
 
 		for _, v := range conn {
 			m[v.Protocol] = v.Stats["CurrEstab"]
