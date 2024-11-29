@@ -9,12 +9,14 @@
 
 ***DockerHub***： [NPS](https://hub.docker.com/r/yisier1/nps) [NPC](https://hub.docker.com/r/yisier1/npc)
 
+***宝塔面板***：[宝塔面板 Docker](docs/bt.md)
+
 # 交流群
-聊天灌水QQ群：619833483
+聊天灌水QQ群：770569342,619833483(已满)
 
 # 公益云内网穿透
 https://natnps.com/
-公益NPS内网穿透服务，长期免费，5M带宽，不限流量，欢迎来嫖，自行注册账号。
+公益NPS内网穿透服务，长期免费，6M带宽，3条隧道，不限流量，欢迎来嫖，自行注册账号。
 
 # 特价云服务器  
 国内BGP，游戏开服，2核 2G 15M上行 25元/月，[专属连接，首月5折](https://www.rainyun.com/MjY0MzY1_)
@@ -26,6 +28,16 @@ https://natnps.com/
 
 
 ## 更新日志  
+- 2024-11-07  v0.26.20  
+  新增：
+  - 客户端增加创建时间
+  
+  修复：
+  - 客户端限速单位不统一 [#185](https://github.com/yisier/nps/issues/185)
+  - 增加从下拉选择客户端,隧道列表排序,新增编辑后不会刷新界面 [#183](https://github.com/yisier/nps/issues/183)
+  - 隧道数量限制无法统计域名映射 [#209](https://github.com/yisier/nps/issues/209) 
+  
+
 - 2024-06-01  v0.26.19  
   - golang 版本升级到 1.22.
   - 增加自动https，自动将http 重定向（301）到 https.  
